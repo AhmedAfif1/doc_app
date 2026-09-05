@@ -1,4 +1,4 @@
-import 'package:doc_doc_app/Core/constants/app_colors.dart';
+import 'package:doc_doc_app/Core/theming/app_colors.dart';
 import 'package:doc_doc_app/Core/routing/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -9,7 +9,7 @@ class DocApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(428, 926),
+      designSize: const Size(375, 812),
       builder: (context, child) {
         return MaterialApp.router(
           theme: ThemeData(
@@ -17,7 +17,7 @@ class DocApp extends StatelessWidget {
             scaffoldBackgroundColor: Colors.white,
           ),
           debugShowCheckedModeBanner: false,
-          title: 'Banki App',
+          title: 'Doc App',
           routerConfig: AppRouter.goRouter,
         );
       },
