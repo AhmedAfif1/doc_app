@@ -1,5 +1,6 @@
 import 'package:doc_doc_app/Core/routing/app_routes.dart';
 import 'package:doc_doc_app/Features/auth/presentation/views/login_view.dart';
+import 'package:doc_doc_app/Features/auth/presentation/views/sign_up_view.dart';
 import 'package:doc_doc_app/Features/onboarding/presentation/views/on_boarding_view.dart';
 import 'package:go_router/go_router.dart';
 
@@ -18,11 +19,11 @@ class AppRouter {
         builder: (context, state) => LoginView(),
       ),
 
-      // GoRoute(
-      //   name: Routes.signUpView,
-      //   path: Routes.signUpView,
-      //   builder: (context, state) => SignUpView(),
-      // ),
+      GoRoute(
+        name: AppRoutes.signUpView,
+        path: AppRoutes.signUpView,
+        builder: (context, state) => SignUpView(),
+      ),
     ],
   );
 }
